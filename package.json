@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack"
+    "build": "webpack",
+    "prepare-surge": "mkdir -p surge && cp index.html surge && cp -r dist surge",
+    "deploy-surge": "surge --domain vintage-clock.surge.sh surge",
+    "deploy": "npm run build && npm run prepare-surge && npm run deploy-surge"
   },
   "author": "",
   "license": "ISC",
