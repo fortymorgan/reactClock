@@ -9,7 +9,7 @@ Vintage digital clock.
 ## How to develop
 To run the app locally first you need to create `bundle.js` with:
 ```
-npm run build
+npm run watch
 ```
 Then open `index.html`.
 
